@@ -15,14 +15,26 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:as-external-uri.helloWorld"
+        "onCommand:as-external-uri.*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "as-external-uri.helloWorld",
-				"title": "Hello World"
+				"command": "as-external-uri.localhostPort",
+				"title": "As External URI: localhost port test"
+			},
+			{
+				"command": "as-external-uri.localhostNoPort",
+				"title": "As External URI: localhost no port test"
+			},
+			{
+				"command": "as-external-uri.localhostNoPortHttps",
+				"title": "As External URI: localhost no port https test"
+			},
+			{
+				"command": "as-external-uri.noLocalhost",
+				"title": "As External URI: no localhost test"
 			}
 		]
 	},

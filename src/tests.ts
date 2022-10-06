@@ -1,15 +1,15 @@
 import * as vscode from "vscode";
 
 export const TEST_CASES = {
-  locahostPort: {
+  localhostPort: {
     input: "http://localhost:3000",
     expected: "http://localhost:8080/proxy/3000",
   },
-  locahostNoPort: {
+  localhostNoPort: {
     input: "http://localhost",
     expected: "http://localhost:8080/proxy/80",
   },
-  locahostNoPortHttps: {
+  localhostNoPortHttps: {
     input: "https://localhost",
     expected: "http://localhost:8080/proxy/443",
   },
