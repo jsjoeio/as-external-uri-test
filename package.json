@@ -28,7 +28,7 @@
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
-		"vscode:package": "npx vsce package",
+		"vscode:package": "npx vsce package && cp as-external-uri-*.vsix packaged/",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
 		"pretest": "yarn run compile && yarn run lint",
