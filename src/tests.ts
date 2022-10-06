@@ -23,11 +23,11 @@ export type ValidTestCase = keyof typeof TEST_CASES;
 
 export async function handleTestCase(testCase: ValidTestCase) {
   const externalUri = await vscode.env.asExternalUri(
-    vscode.Uri.parse("http://localhost:8000")
+    vscode.Uri.parse(TEST_CASES[testCase].input)
   );
   vscode.window.showInformationMessage(`
-  input: ${TEST_CASES[testCase].input} 
-  output: ${externalUri}
-  expected: ${TEST_CASES[testCase].expected} 
+input: ${TEST_CASES[testCase].input} 
+output: ${externalUri}
+expected: ${TEST_CASES[testCase].expected} 
   `);
 }
