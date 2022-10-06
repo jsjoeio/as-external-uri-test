@@ -15,7 +15,7 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:as-external-uri.*"
+        "onStartupFinished"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
