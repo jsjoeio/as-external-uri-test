@@ -3,15 +3,15 @@ import * as vscode from "vscode";
 export const TEST_CASES = {
   localhostPort: {
     input: "http://localhost:3000",
-    expected: "http://localhost:8080/proxy/3000",
+    expected: "<host>/proxy/3000",
   },
   localhostNoPort: {
     input: "http://localhost",
-    expected: "http://localhost:8080/proxy/80",
+    expected: "<host>/proxy/80",
   },
   localhostNoPortHttps: {
     input: "https://localhost",
-    expected: "http://localhost:8080/proxy/443",
+    expected: "<host>/proxy/443",
   },
   noLocalhost: {
     input: "https://google.com",
