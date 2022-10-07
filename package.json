@@ -22,20 +22,8 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "as-external-uri.localhostPort",
-				"title": "As External URI: localhost port test"
-			},
-			{
-				"command": "as-external-uri.localhostNoPort",
-				"title": "As External URI: localhost no port test"
-			},
-			{
-				"command": "as-external-uri.localhostNoPortHttps",
-				"title": "As External URI: localhost no port https test"
-			},
-			{
-				"command": "as-external-uri.noLocalhost",
-				"title": "As External URI: no localhost test"
+				"command": "as-external-uri.askTestCase",
+				"title": "As External URI: input test case"
 			}
 		]
 	},
